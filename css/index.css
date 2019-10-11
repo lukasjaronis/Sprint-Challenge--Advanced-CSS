@@ -142,6 +142,12 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
 }
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  html,
+  body {
+    margin: 0 auto;
+  }
+}
 h1,
 h2,
 h3,
@@ -209,6 +215,12 @@ p {
 .home .intro p {
   padding: 0 15px;
 }
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .home .intro {
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+  }
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -238,6 +250,12 @@ p {
 }
 .home .visit-planets p {
   margin-top: 13px;
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .home .visit-planets {
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+  }
 }
 .home .walk {
   margin-top: 60px;
@@ -282,8 +300,16 @@ p {
   box-shadow: 1px 1px 10px #22283A;
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
+  .home .walk .walk-text .btn a {
+    margin: 0 auto;
+    height: 5rem;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
   .home .walk .walk-text {
     width: calc(100% - 2rem);
+    margin: 0 auto;
   }
 }
 .home .walk .walk-img {
@@ -297,9 +323,15 @@ p {
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   .home .walk .walk-img img {
-    width: 374px;
-    height: 280.5px;
-    margin-bottom: 2rem;
+    width: auto;
+    margin: 20px 2.5%;
+    border-radius: 20px;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .home .walk .walk-img {
+    width: calc(100% - 2rem);
   }
 }
 .row {
@@ -328,6 +360,11 @@ p {
 .row .col-1-of-1 nav ul li {
   margin: 2rem;
   font-size: 1.5rem;
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .row .col-1-of-1 nav ul li {
+    font-size: 100%;
+  }
 }
 .row .col-1-of-1 nav ul li a {
   list-style: none;

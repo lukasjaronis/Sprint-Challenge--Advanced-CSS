@@ -11,7 +11,10 @@
     p {
       padding:0 15px;
     }
-  
+    @media @mobile {
+      width: calc(100% - 2rem);
+      margin: 0 auto;
+    }
   }
 
   .space-images {
@@ -51,6 +54,10 @@
     p {
       margin-top: 13px;
     }
+    @media @mobile {
+      width: calc(100% - 2rem);
+      margin: 0 auto;
+    }
   }
 
   .walk {
@@ -79,16 +86,22 @@
       }
 
       .btn {
-       
+
         a {
           .anchordefault();
           .primarybtn();
+          @media @mobile {
+            margin: 0 auto;
+            height: 5rem;
+            width: 100%;
+          }
         }
         
       }
 
       @media @mobile {
         width: calc(100% - 2rem);
+        margin: 0 auto;
       }
 
     }
@@ -103,11 +116,16 @@
         border-radius: 10px;
 
         @media @mobile {
-          width: 374px;
-          height: 280.5px;
-          margin-bottom: 2rem;
+          width: auto;
+          margin: 20px 2.5%;
+          border-radius: 20px;
+          height: auto;
         }
 
+      }
+      @media @mobile {
+        width: calc(100% - 2rem);
+     
       }
     }
   }
