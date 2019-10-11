@@ -5,11 +5,11 @@
     border: @border;
 }
 
-.primarybtn(@bgcolor: #22283A) {
+.primarybtn(@bgcolor: #22283A, @color: white) {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: @color;
     background: @bgcolor;
     font-size: 1.4rem;
     font-weight: 700;
@@ -20,7 +20,8 @@
 
     &:hover {
         font-weight: 900;
-        color: rgb(0,255,255);
+        background: white;
+        color: #22283A;
         box-shadow: 1px 1px 10px #22283A;
     }
 
