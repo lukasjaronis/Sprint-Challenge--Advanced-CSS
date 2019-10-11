@@ -70,6 +70,8 @@
 
     @media @mobile {
       flex-direction: column-reverse;
+      align-items: center;
+      flex-wrap: wrap;
       padding: 15px;
       margin: 0;
     }
@@ -109,23 +111,20 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @mobile {
+        width: 100%;
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
 
         @media @mobile {
-          width: auto;
-          margin: 20px 2.5%;
-          border-radius: 20px;
-          height: auto;
+          margin-bottom: 2rem;
         }
 
-      }
-      @media @mobile {
-        width: calc(100% - 2rem);
-     
       }
     }
   }
