@@ -229,6 +229,25 @@ p {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #22283A;
+  font-size: 1.4rem;
+  font-weight: 700;
+  width: 22%;
+  height: 3rem;
+  border-radius: 6px;
+}
+.home .walk .walk-text .btn a:hover {
+  font-weight: 900;
+  color: #00ffff;
+  box-shadow: 1px 1px 10px #22283A;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -237,6 +256,32 @@ p {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.row {
+  margin-top: 1rem;
+  background: rgba(220, 220, 220, 0.5);
+}
+.row h1 {
+  font-size: 4rem;
+}
+.row .col-1-of-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row .col-1-of-1 nav ul {
+  display: flex;
+}
+.row .col-1-of-1 nav ul li {
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+.row .col-1-of-1 nav ul li a {
+  list-style: none;
+  color: black;
+  border: none;
+  text-decoration: none;
 }
 footer {
   color: #22283B;

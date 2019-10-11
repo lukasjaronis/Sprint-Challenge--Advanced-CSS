@@ -1,1 +1,28 @@
 // Mixins Here
+
+.anchordefault(@decor: none, @border: none){
+    text-decoration: @decor;
+    border: @border;
+}
+
+.primarybtn(@bgcolor: #22283A) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: @bgcolor;
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: 22%;
+    height: 3rem;
+    border-radius: 6px;
+
+
+    &:hover {
+        font-weight: 900;
+        color: rgb(0,255,255);
+        box-shadow: 1px 1px 10px #22283A;
+    }
+
+
+}
