@@ -5,6 +5,11 @@
 
 html {
   font-size: 62.5%;
+
+  @media @mobile {
+    width: calc(100% - 2rem);
+  }
+
 }
 
 html, body {
@@ -34,5 +39,16 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;  
+
+  @media @mobile {
+    width: calc(100% - 2rem);
+  }
+
 }
 
+.content-wrapper {
+  @media @mobile {
+    margin: 0 auto;
+    width: calc(100% - 2rem);
+  }
+}
